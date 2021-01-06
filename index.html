@@ -4,13 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apple Store Designs</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
+  <h1>Apple Store Designs</h1>
   <div class="container">
-    Something good in the aire.
-
     <div class="special-hours">
-      <p>Some arbitrary time</p>
+      <div class="special__details">
+        <h3 class="special__title">Nearby store <span class="special__title--point">+1</span></h3>
+        <p>Apple Boise Towne Square</p>
+        <p>
+          <span class="special__label">1.5 km</span> <span class="special__label">6 min</span>
+        </p>
+      </div>
+      <a href="#" class="special__link">
+        Other stores
+        <svg class="icon icon--cheveron">
+          <use xlink:href="sprite.svg#icon-cheveron-right"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class="items">
+      <div class="item">
+        <p class="item__details">
+          <span class="item__length">40 mm</span>
+          <span class="item__description">Band fits 130 - 180mm wrists</span>
+        </p>
+        <p class="item__price">&#36;799</p>
+      </div>
+      <div class="item">
+        <p class="item__details">
+          <span class="item__length">44 mm</span>
+          <span class="item__description">Band fits 150 - 200mm wrists</span>
+        </p>
+        <p class="item__price">&#36;849</p>
+      </div>
+      <button>
+        Continue
+        <svg class="icon icon--cheveron">
+          <use xlink:href="sprite.svg#icon-cheveron-right"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </body>
