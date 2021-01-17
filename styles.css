@@ -1,5 +1,6 @@
 :root {
   --purple: #4F7DE3;
+  --light-purple: #95B1EE;
   --dark-purple: #245ddc;
   --gray: #808080;
   --light-gray: #D3D3D3;
@@ -27,6 +28,10 @@ a:visited {
   cursor: pointer;
 }
 
+img {
+  width: 100%;
+}
+
 /* TYPOGRAPHY */
 
 h1 {
@@ -47,6 +52,10 @@ h1 {
 
 .txt-gray {
   color: var(--gray);
+}
+
+.txt--purple {
+  color: var(--purple);
 }
 
 .rounded {
@@ -98,6 +107,15 @@ h1 {
 
 .icon--white {
   fill: #FFF;
+}
+
+.icon--gold {
+  fill: gold;
+}
+
+.icon--purple {
+  fill: var(--light-purple);
+  stroke-width: 1%;
 }
 
 /* CONTAINER */
@@ -306,4 +324,40 @@ h1 {
 
 .payment__btn:hover {
   background-color: var(--dark-purple);
+}
+
+
+
+/* PODS */
+
+.pods {
+  padding: 1em;
+  background-color: #FFF;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 20px;
+  justify-items: start;
+}
+
+.pods__body p:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pods__body {
+  display: grid;
+  justify-self: stretch;
+}
+
+.pods__title {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+}
+
+.pods__price {
+  margin-bottom: 0;
+  justify-self: end;
 }
